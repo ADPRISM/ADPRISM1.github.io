@@ -48,6 +48,37 @@
       border-radius: 25px;
       font-size: 1rem;
     }
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+      cursor: pointer;
+      border: 2px solid white;
+    }
+    /* Video Section */
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    video {
+      width: 300px;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
   </style>
 </head>
 <body>
@@ -57,6 +88,7 @@
     <h1>AD PRISM</h1>
     <p>Photography • Filmmaking • Documentary • Motion Graphics • Cinematography • Headshots • Interviews</p>
   </header>
+
   <section class="services">
     <div class="service">Photography</div>
     <div class="service">Filmmaking</div>
@@ -65,6 +97,25 @@
     <div class="service">Cinematography</div>
     <div class="service">Headshots</div>
     <div class="service">Interviews</div>
+  </section>
+
+  <h2>📸 Photo Gallery</h2>
+  <section class="gallery">
+    <img src="images/gallery1.jpg" alt="Gallery Image 1">
+    <img src="images/gallery2.jpg" alt="Gallery Image 2">
+    <img src="images/gallery3.jpg" alt="Gallery Image 3">
+  </section>
+
+  <h2>🎬 Video Showcase</h2>
+  <section class="videos">
+    <video controls>
+      <source src="videos/sample1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video controls>
+      <source src="videos/sample2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 </body>
 </html>
